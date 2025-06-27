@@ -1,0 +1,178 @@
+/* NeonStyle.css */
+
+/* General Neon Effects */
+.neon-text-shadow {
+    text-shadow:
+        0 0 7px rgba(255, 255, 255, 0.7),
+        0 0 10px rgba(0, 204, 255, 0.8),
+        0 0 21px rgba(0, 204, 255, 0.9),
+        0 0 42px rgba(0, 204, 255, 1);
+}
+
+/* Specific Color Glows for Icons and Text */
+.neon-blue-light {
+    filter: drop-shadow(0 0 5px rgba(0, 204, 255, 0.7)) drop-shadow(0 0 10px rgba(0, 204, 255, 0.5));
+}
+
+.neon-green-light {
+    filter: drop-shadow(0 0 5px rgba(0, 255, 0, 0.7)) drop-shadow(0 0 10px rgba(0, 255, 0, 0.5));
+}
+
+.neon-yellow-light {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 0, 0.7)) drop-shadow(0 0 10px rgba(255, 255, 0, 0.5));
+}
+
+.neon-purple-light {
+    filter: drop-shadow(0 0 5px rgba(170, 0, 255, 0.7)) drop-shadow(0 0 10px rgba(170, 0, 255, 0.5));
+}
+
+/* Header Glow */
+.neon-blue-glow {
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0.8), 0 0 20px rgba(0, 204, 255, 0.6);
+}
+
+/* Borders */
+.neon-blue-border {
+    border-color: #00ccff !important;
+    box-shadow: 0 0 8px rgba(0, 204, 255, 0.6);
+}
+
+.neon-green-border {
+    border-color: #00ff00 !important;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+}
+
+.neon-yellow-border {
+    border-color: #ffff00 !important;
+    box-shadow: 0 0 8px rgba(255, 255, 0, 0.6);
+}
+
+.neon-purple-border {
+    border-color: #aa00ff !important;
+    box-shadow: 0 0 8px rgba(170, 0, 255, 0.6);
+}
+
+.neon-pink-border {
+    border-color: #ff007f !important;
+    box-shadow: 0 0 8px rgba(255, 0, 127, 0.6);
+}
+
+.neon-cyan-border {
+    border-color: #00ffff !important;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+}
+
+
+/* Input and Select Fields */
+.neon-input:focus,
+.neon-select:focus {
+    border-color: #00ccff !important;
+    box-shadow: 0 0 0 2px rgba(0, 204, 255, 0.4);
+}
+
+/* Buttons */
+.neon-button {
+    background-color: #0099ff !important;
+    box-shadow: 0 0 10px rgba(0, 153, 255, 0.7);
+}
+
+.neon-button:hover {
+    background-color: #007acc !important;
+    box-shadow: 0 0 15px rgba(0, 153, 255, 1);
+}
+
+.neon-secondary-button {
+    border-color: #00ccff !important;
+    color: #00ccff !important;
+    box-shadow: 0 0 5px rgba(0, 204, 255, 0.5);
+}
+
+.neon-secondary-button:hover {
+    background-color: rgba(0, 204, 255, 0.1) !important;
+    box-shadow: 0 0 10px rgba(0, 204, 255, 0.8);
+}
+
+.neon-submit-button {
+    background-color: #00e676 !important;
+    /* Brighter green */
+    box-shadow: 0 0 10px rgba(0, 230, 118, 0.7);
+}
+
+.neon-submit-button:hover {
+    background-color: #00c266 !important;
+    box-shadow: 0 0 15px rgba(0, 230, 118, 1);
+}
+
+/* Progress Bar */
+.neon-blue-progress {
+    background-color: #00ccff !important;
+    box-shadow: 0 0 8px rgba(0, 204, 255, 0.7);
+}
+
+/* Status Badges - adjust backgrounds to be more saturated for neon effect */
+.bg-green-700 {
+    background-color: #00e676 !important;
+}
+
+.bg-yellow-700 {
+    background-color: #ffeb3b !important;
+}
+
+.bg-gray-700 {
+    background-color: #555 !important;
+}
+
+/* Score Buttons */
+.neon-score-active {
+    background-color: #00ccff !important;
+    border-color: #00ccff !important;
+    color: white !important;
+    box-shadow: 0 0 8px rgba(0, 204, 255, 0.8);
+}
+
+.neon-score-inactive {
+    border-color: #00ccff !important;
+    /* Change inactive border to a neon color */
+    color: #00ccff !important;
+    /* Change inactive text to a neon color */
+}
+
+.neon-score-inactive:hover {
+    background-color: rgba(0, 204, 255, 0.1) !important;
+    box-shadow: 0 0 8px rgba(0, 204, 255, 0.5);
+}
+
+/* Links */
+.neon-link {
+    color: #00ccff !important;
+    text-shadow: 0 0 5px rgba(0, 204, 255, 0.5);
+}
+
+.neon-link:hover {
+    color: #88eeff !important;
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.8);
+}
+
+/* Card Hover Effect with Border Pulse */
+@keyframes neonBorderPulse {
+    0% {
+        box-shadow: 0 0 0px rgba(0, 204, 255, 0.6);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(0, 204, 255, 1);
+    }
+
+    100% {
+        box-shadow: 0 0 0px rgba(0, 204, 255, 0.6);
+    }
+}
+
+.neon-border-pulse {
+    animation: neonBorderPulse 3s infinite alternate;
+}
+
+.neon-card-hover:hover {
+    border-color: #00ccff !important;
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.8);
+}
