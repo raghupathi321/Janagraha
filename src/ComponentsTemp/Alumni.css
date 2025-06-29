@@ -1,0 +1,229 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Example: in parent container */
+.alumni-page {
+  min-height: 100vh; /* Ensure it fills full vertical space */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2.5rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f0f2f5, #e0e5ec);
+  color: #333;
+  box-sizing: border-box;
+}
+
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #f5f7fa, #e4e9f0);
+  color: #333;
+}
+
+.alumni-page {
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Banner */
+.alumni-banner {
+  background: linear-gradient(to right, #4f46e5, #6a5acd);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.alumni-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.alumni-banner p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* Search Bar */
+.alumni-search {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.alumni-search input {
+  width: 90%;
+  max-width: 600px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 30px;
+  border: 2px solid #bbb;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.alumni-search input:focus {
+  border-color: #4f46e5;
+  outline: none;
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.2);
+}
+
+/* Alumni Cards */
+.alumni-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.alumni-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.alumni-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.alumni-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #4f46e5;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+
+.alumni-card:hover img {
+  transform: scale(1.05);
+}
+
+.alumni-card h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 0.4rem;
+}
+
+.alumni-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.2rem 0;
+}
+
+.alumni-card .story {
+  font-style: italic;
+  color: #444;
+  font-size: 0.92rem;
+  margin: 0.6rem 0 1rem;
+  line-height: 1.4;
+}
+
+/* Buttons */
+.connect-btn,
+.join-btn {
+  background: linear-gradient(to right, #4f46e5, #6a5acd);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: auto;
+}
+
+.connect-btn:hover,
+.join-btn:hover {
+  background: linear-gradient(to right, #3e3abd, #5247b9);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.alumni-footer {
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.alumni-footer a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.alumni-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .alumni-banner h1 {
+    font-size: 2rem;
+  }
+
+  .alumni-banner p {
+    font-size: 1rem;
+  }
+
+  .alumni-search input {
+    width: 95%;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .alumni-card {
+    padding: 1.2rem;
+  }
+
+  .alumni-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .alumni-card p {
+    font-size: 0.9rem;
+  }
+
+  .connect-btn, .join-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .alumni-banner h1 {
+    font-size: 1.7rem;
+  }
+
+  .alumni-banner p {
+    font-size: 0.95rem;
+  }
+}
