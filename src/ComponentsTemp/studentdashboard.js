@@ -12,8 +12,8 @@ const StudentDashboard = () => {
     // Mock data
     const mockStudent = {
         _id: "student123",
-        name: "John Doe",
-        email: "john.doe@example.com",
+        name: "Ram",
+        email: "ram.joshi@example.com",
         phone: "+1-555-123-4567",
         location: "New York, USA",
         bio: "Passionate learner interested in technology and science.",
